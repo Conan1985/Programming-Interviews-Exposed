@@ -5,6 +5,7 @@
  */
 
 #include <stdio.h>
+#include <stdbool.h>
 
 int main()
 {
@@ -13,10 +14,8 @@ int main()
         void *data;
     } Element;
     
-    bool createStack (Element **stack) {
-        *stack = NULL;
-        return true;
-    }
+    bool push(Element **stack, void *data);
+
     
     return 0;
 }
