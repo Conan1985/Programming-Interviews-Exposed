@@ -14,7 +14,8 @@ int main()
         void *data;
     } Element;
     
-    bool push(Element **stack, void *data);
+    void push( Element *stack, void *data );
+    void *pop( Element *stack );
 
     
     return 0;
