@@ -4,6 +4,6 @@ project(Programming_Interviews_Exposed)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
-        "Stack implementation/stack-implementation.c")
+        "Ch 4. Linked Lists/Stack implementation/stack-implementation.c")
 
 add_executable(Programming_Interviews_Exposed ${SOURCE_FILES})
