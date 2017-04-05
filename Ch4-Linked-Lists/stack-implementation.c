@@ -1,3 +1,9 @@
+/*
+ * PROBLEM
+ * Discuss the stack data structure. Implement a stack in C using either a linked list or a dynamic array, and justify your decision.
+ * Design the interface to your stack to be complete, consistent, and easy to use.
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -7,11 +13,6 @@ typedef struct Element {
     void *data;
 } Element;
 
-/*
- * PROBLEM
- * Discuss the stack data structure. Implement a stack in C using either a linked list or a dynamic array, and justify your decision.
- * Design the interface to your stack to be complete, consistent, and easy to use.
- */
 bool push (Element **stack, void *data){
     Element *elem = malloc(sizeof(Element));
     if (!elem) return false;
