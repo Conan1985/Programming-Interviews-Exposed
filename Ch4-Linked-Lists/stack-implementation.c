@@ -46,4 +46,5 @@ bool deleteStack ( Element **stack ){
     return true;
 }
 
-void main() {}
+void main() {
+}
