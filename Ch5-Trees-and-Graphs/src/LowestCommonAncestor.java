@@ -1,5 +1,7 @@
 /**
- * Created by youweilu on 4/10/17.
+ * PROBLEM
+ * Given the value of two nodes in a binary search tree, find the lowest (nearest) common ancestor. You may assume that
+ * both values already exist in the tree.
  */
 public class LowestCommonAncestor {
     Node findLowestCommanAncestor (Node root, int value1, int value2) {

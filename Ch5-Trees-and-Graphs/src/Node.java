@@ -1,5 +1,5 @@
 /**
- * Created by youweilu on 4/9/17.
+ * Binary Tree Node
  */
 public class Node {
     private Node left;
