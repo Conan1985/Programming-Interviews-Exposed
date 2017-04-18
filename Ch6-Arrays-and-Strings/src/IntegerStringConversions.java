@@ -39,7 +39,7 @@ public class IntegerStringConversions {
             isNeg = true;
         }
 
-        /* Fill buffer with digit chracters in reverse order */
+        /* Fill buffer with digit characters in reverse order */
         do {
             temp[i++] = (char) ((num%10) + '0');
             num /= 10;
