@@ -15,7 +15,7 @@ public class Permutations {
 
     private void permute() {
         if (out.length() == in.length()) {
-            System.out.print(out);
+            System.out.println(out);
             return;
         }
         for (int i =0; i<in.length(); ++i) {
