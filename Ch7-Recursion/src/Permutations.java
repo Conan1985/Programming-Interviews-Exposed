@@ -13,6 +13,9 @@ public class Permutations {
         used = new boolean[in.length()];
     }
 
+    //make changes
+    
+
     private void permute() {
         if (out.length() == in.length()) {
             System.out.println(out);
