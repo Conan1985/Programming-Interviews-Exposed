@@ -5,7 +5,7 @@
  */
 public class Permutations {
     private boolean[] used;
-    private StringBuilder out = new StringBuilder();
+    private StringBuffer out = new StringBuffer();
     private final String in;
 
     public Permutations (final String str) {

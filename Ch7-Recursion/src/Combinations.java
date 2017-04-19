@@ -5,7 +5,7 @@
  * are the same combination.
  */
 public class Combinations {
-    private StringBuilder out = new StringBuilder();
+    private StringBuffer out = new StringBuffer();
     private final String in;
 
     public Combinations(final String str) {
