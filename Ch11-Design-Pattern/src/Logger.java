@@ -4,19 +4,26 @@
  * logging facility using hte Singleton pattern?
  */
 
+/** PROBLEM
+ * Your application uses a singleton, but it's not always necessary, and it's expensive to initialize. How can you
+ * improve this situation?
+ */
+
 import org.jetbrains.annotations.Contract;
 
 // Implements a simple logging class using a singleton.
 public class Logger {
-    // Create and store the singleton.
-    private static final Logger instance = new Logger();
+    // Inner class initializes instance on load, won't be loaded
+    // until referenced by getInstance()
+    private static class LoggerHolder {
+        public static final Logger instance = new Logger();
+    }
     // Prevent anyone else from creating this class.
     private Logger(){
     }
     // Return the singleton instance.
-    @Contract(pure = true)
     public static Logger getInstance() {
-        return instance;
+        return LoggerHolder.instance;
     }
     // Log a string to the console.
     //
