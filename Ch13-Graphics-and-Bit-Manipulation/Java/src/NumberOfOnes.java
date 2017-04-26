@@ -6,10 +6,8 @@ public class NumberOfOnes {
     int numOnesBinary (int number) {
         int numOnes = 0;
         while (number != 0) {
-            if ((number & 1) == 1) {
-                numOnes ++;
-            }
-            number = number >>> 1;
+            number = number & (number - 1);
+            numOnes++;
         }
         return numOnes;
     }
