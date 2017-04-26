@@ -1,20 +1,16 @@
-// PROBLEM
-// Write a C function that determines whether a computer is big-endian or 
-// little-endian.
-
-#include <stdio.h>
-#include <stdbool.h>
-
-    bool isLittleEndian() {
-        union {
-            int theInteger;
-            char singleByte;
-        } endianTest;
-        endianTest.theInteger = 1;
-        return endianTest.singleByte;
+/**
+ * PROBLEM
+ * Write a function that determines the number of 1 bits in the binary representation of a given integer.
+ */
+public class NumberOfOnes {
+    int numOnesBinary (int number) {
+        int numOnes = 0;
+        while (number != 0) {
+            if ((number & 1) == 1) {
+                numOnes ++;
+            }
+            number = number >>> 1;
+        }
+        return numOnes;
     }
-
-void main() {
-    
 }
-
